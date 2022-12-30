@@ -16,4 +16,5 @@ resource "aws_s3_bucket" "backend" {
     
     bucket = "backend-dev"
     acl = "private"
+    region = "us-east-1"
 }
