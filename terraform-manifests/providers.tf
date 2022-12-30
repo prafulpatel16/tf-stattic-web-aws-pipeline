@@ -5,6 +5,7 @@ terraform {
       version = "~> 4.48.0"
     }
   }
+backend "s3" {}
 
 }
 
@@ -12,9 +13,4 @@ provider "aws" {
   alias  = "us-east-1"
   region = "us-east-1"
 }
-resource "aws_s3_bucket" "backend" {
-    
-    bucket = "backend-dev-20231611"
-    acl = "private"
-    region = "us-east-1"
-}
+
