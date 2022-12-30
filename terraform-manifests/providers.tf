@@ -14,7 +14,7 @@ provider "aws" {
 }
 resource "aws_s3_bucket" "backend" {
     
-    bucket = "backend-dev"
+    bucket = "backend-dev-20231611"
     acl = "private"
     region = "us-east-1"
 }
